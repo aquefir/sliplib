@@ -1,0 +1,24 @@
+sli-tool
+
+Created by Alexander Nicholi
+Copyright © 2021 Aquefir
+Released under multiple licences; see relevant files for details.
+
+§1. WHAT IS THIS?
+------------------
+
+The Structured Logical Interface, or SLI for short, is a documentation format
+created as ADP 2. The name is a backronym from SLI, which was previously
+associated with the Slick Makefiles (ADP 4). It is a simple, ASCII-only
+structured text format designed to be easy to parse for humans and machines
+alike.
+
+The sli-tool is an MPL-2.0 licenced C program and BSD-2-Clause licenced API
+header for parsing SLI files into an easy-to-process structure.
+
+§2. REFERENCES & ADDITIONAL READING
+------------------------------------
+
+1. Aquefir. “ADP 2.” Structured Logical Interface documentation format.
+   <https://aquefir.co/adp1>
+2. Aquefir. “ADP 4.” Slick Makefiles. <https://aquefir.co/adp4>

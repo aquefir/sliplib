@@ -1,0 +1,19 @@
+This file contains the project’s copypastable boilerplate comment headers.
+
+Boilerplate for C-like languages:
+
+/****************************************************************************\
+ *                                 sli-tool                                 *
+ *                                                                          *
+ *                         Copyright © 2021 Aquefir                         *
+ *                Released under Mozilla Public License 2.0.                *
+\****************************************************************************/
+
+Hash-based boilerplate (Python, POSIX shell, Makefile):
+
+##############################################################################
+##                                 sli-tool                                 ##
+##                                                                          ##
+##                         Copyright © 2021 Aquefir                         ##
+##                Released under Mozilla Public License 2.0.                ##
+##############################################################################
