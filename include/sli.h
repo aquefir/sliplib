@@ -68,10 +68,4 @@ struct sli_record
 	u8 flags;
 };
 
-struct sli_file
-{
-	struct sli_record * records;
-	ptri records_sz;
-};
-
 #endif /* INC_API__SLITOOL_SLI_H */
