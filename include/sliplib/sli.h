@@ -5,8 +5,8 @@
  *                       Released under BSD-2-Clause.                       *
 \****************************************************************************/
 
-#ifndef INC_API__SLI_H
-#define INC_API__SLI_H
+#ifndef INC_API__SLIPLIB_SLI_H
+#define INC_API__SLIPLIB_SLI_H
 
 #include <uni/types/int.h>
 
@@ -33,9 +33,9 @@ enum /* sli_record_masks */
 	SLI_RECORD_MASK_NEW = 1 << SLI_RECORD_FLAG_NEW,
 	SLI_RECORD_MASK_THREADSAFE = 1 << SLI_RECORD_FLAG_THREADSAFE,
 	SLI_RECORD_MASK_PREPROC = 1 << SLI_RECORD_FLAG_PREPROC,
+	SLI_RECORD_MASK_VALIDUSE = 1 << SLI_RECORD_FLAG_VALIDUSE,
 	SLI_RECORD_MASK_PACKED = 1 << SLI_RECORD_FLAG_PACKED,
-	SLI_RECORD_MASK_ZEROFILL = 1 << SLI_RECORD_FLAG_ZEROFILL,
-	SLI_RECORD_MASK_VALIDUSE = 1 << SLI_RECORD_FLAG_VALIDUSE
+	SLI_RECORD_MASK_ZEROFILL = 1 << SLI_RECORD_FLAG_ZEROFILL
 };
 
 enum /* sli_filetypes */
@@ -44,7 +44,10 @@ enum /* sli_filetypes */
 	SLI_FILETYPE_STRUCT,
 	SLI_FILETYPE_SUB,
 	SLI_FILETYPE_VAR,
-	SLI_FILETYPE_CONST
+	SLI_FILETYPE_CONST,
+	SLI_FILETYPE_TYPE,
+	SLI_FILETYPE_MEMBER,
+	SLI_FILETYPE_LAW
 };
 
 enum
@@ -54,18 +57,27 @@ enum
 	SLI_FILETYPE_MASK_SUB = 1 << SLI_FILETYPE_SUB,
 	SLI_FILETYPE_MASK_VAR = 1 << SLI_FILETYPE_VAR,
 	SLI_FILETYPE_MASK_CONST = 1 << SLI_FILETYPE_CONST,
+	SLI_FILETYPE_MASK_TYPE = 1 << SLI_FILETYPE_TYPE,
+	SLI_FILETYPE_MASK_MEMBER = 1 << SLI_FILETYPE_MEMBER,
+	SLI_FILETYPE_MASK_LAW = 1 << SLI_FILETYPE_LAW
 };
+
+struct sli_record;
 
 struct sli_record
 {
-	/* NULL terminated array */
-	const char ** dirs;
-	const char * file;
+	const char * fname;
 	const char * text;
-	/* NOTE: for return val, param_n == 0xFFFF */
-	u16 param_n;
-	u8 type;
-	u8 flags;
+	/* NULL if this is the root */
+	struct sli_record * parent;
+	/* NULL terminated array */
+	struct sli_record ** children;
+	u16 flags;
+	u16 ftype;
+	/* $0 == 0, $1 == 1, ... # (i.e. return value) == 0xFFFFFFFF */
+	u32 param_n;
 };
 
-#endif /* INC_API__SLI_H */
+struct sli_record * sli_fromftext( const char * );
+
+#endif /* INC_API__SLIPLIB_SLI_H */

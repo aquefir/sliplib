@@ -34,12 +34,12 @@ FWORKS :=
 
 # sources
 CFILES    := \
-	src/demangle.c \
-	src/mangle.c
+	src/sli.c
 CPPFILES  :=
 PUBHFILES := \
-	include/mangledeggs.h
-PRVHFILES :=
+	include/sli.h
+PRVHFILES := \
+	src/sli.h
 
 # test suite sources
 TES_CFILES    :=

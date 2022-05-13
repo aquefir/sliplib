@@ -3,6 +3,7 @@
 			"name": "Linux",
 			"includePath": [
 				"${workspaceFolder}/src",
+				"${workspaceFolder}/include",
 				"/opt/aq/include",
 				"/usr/include"
 			],
@@ -27,6 +28,7 @@
 			"name": "Mac",
 			"includePath": [
 				"${workspaceFolder}/src",
+				"${workspaceFolder}/include",
 				"/opt/aq/include",
 				"/usr/local/include"
 			],
