@@ -1,12 +1,12 @@
 /****************************************************************************\
- *                                 sli-tool                                 *
+ *                                 sliplib.                                 *
  *                                                                          *
- *                         Copyright © 2021 Aquefir                         *
+ *                     Copyright (C) 2021-2022 Aquefir.                     *
  *                       Released under BSD-2-Clause.                       *
 \****************************************************************************/
 
-#ifndef INC_API__SLITOOL_SLI_H
-#define INC_API__SLITOOL_SLI_H
+#ifndef INC_API__SLI_H
+#define INC_API__SLI_H
 
 #include <uni/types/int.h>
 
@@ -68,4 +68,4 @@ struct sli_record
 	u8 flags;
 };
 
-#endif /* INC_API__SLITOOL_SLI_H */
+#endif /* INC_API__SLI_H */

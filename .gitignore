@@ -4,6 +4,8 @@
 /3rdparty/*
 !/3rdparty/README
 
+sli-tool
+
 *.o
 *.obj
 *.gcno

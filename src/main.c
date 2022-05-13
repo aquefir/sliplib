@@ -1,8 +1,8 @@
 /****************************************************************************\
  *                                 sli-tool                                 *
  *                                                                          *
- *                         Copyright © 2021 Aquefir                         *
- *                Released under Mozilla Public License 2.0.                *
+ *                     Copyright (C) 2021-2022 Aquefir.                     *
+ *                 Released under Artisan Software Licence.                 *
 \****************************************************************************/
 
 #include <uni/types/int.h>

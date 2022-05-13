@@ -1,12 +1,19 @@
-This file contains the project’s copypastable boilerplate comment headers.
+This file contains the project's copypastable boilerplate comment headers.
 
 Boilerplate for C-like languages:
 
 /****************************************************************************\
  *                                 sli-tool                                 *
  *                                                                          *
- *                         Copyright © 2021 Aquefir                         *
- *                Released under Mozilla Public License 2.0.                *
+ *                     Copyright (C) 2021-2022 Aquefir.                     *
+ *                 Released under Artisan Software Licence.                 *
+\****************************************************************************/
+
+/****************************************************************************\
+ *                                 sliplib.                                 *
+ *                                                                          *
+ *                     Copyright (C) 2021-2022 Aquefir.                     *
+ *                       Released under BSD-2-Clause.                       *
 \****************************************************************************/
 
 Hash-based boilerplate (Python, POSIX shell, Makefile):
@@ -14,6 +21,13 @@ Hash-based boilerplate (Python, POSIX shell, Makefile):
 ##############################################################################
 ##                                 sli-tool                                 ##
 ##                                                                          ##
-##                         Copyright © 2021 Aquefir                         ##
-##                Released under Mozilla Public License 2.0.                ##
+##                     Copyright (C) 2021-2022 Aquefir.                     ##
+##                 Released under Artisan Software Licence.                 ##
+##############################################################################
+
+##############################################################################
+##                                 sliplib.                                 ##
+##                                                                          ##
+##                     Copyright (C) 2021-2022 Aquefir.                     ##
+##                       Released under BSD-2-Clause.                       ##
 ##############################################################################
