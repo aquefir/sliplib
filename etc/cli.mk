@@ -40,7 +40,7 @@ CFILES    := \
 	src/sli.c
 CPPFILES  :=
 PUBHFILES := \
-	include/sli.h
+	include/sliplib/sli.h
 PRVHFILES := \
 	src/sli.h
 
